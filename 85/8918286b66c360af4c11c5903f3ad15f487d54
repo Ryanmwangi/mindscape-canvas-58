@@ -1,0 +1,21 @@
+package.json
+  s_8a5d05fb2ace5b::t_a6ca1d3176525d 5,12,84
+vite.config.ts
+  s_8a5d05fb2ace5b::t_44571d881c1d49 12-14
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.5.0",
+  "base_commit_sha": "858918286b66c360af4c11c5903f3ad15f487d54",
+  "prompts": {},
+  "sessions": {
+    "s_8a5d05fb2ace5b": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "019e5197-a5d9-7aa1-bd52-b91442778546",
+        "model": "gpt-5.3-codex"
+      },
+      "human_author": "Ryan Mwangi <ryannganga13325@gmail.com>"
+    }
+  }
+}
