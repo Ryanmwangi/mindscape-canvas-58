@@ -6,7 +6,7 @@
   "type": "module",
   "scripts": {
     "dev": "vite dev",
-    "build": "vite build && node scripts/create-pages-entry.mjs",
+    "build": "vite build && vite build -c vite.static.config.ts",
     "build:dev": "vite build --mode development",
     "preview": "vite preview",
     "deploy": "gh-pages -d dist/client",
