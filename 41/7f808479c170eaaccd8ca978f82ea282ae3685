@@ -1,0 +1,21 @@
+package.json
+  s_8a5d05fb2ace5b::t_0503f1a78f0782 9
+scripts/create-pages-entry.mjs
+  s_8a5d05fb2ace5b::t_0503f1a78f0782 1-48
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.5.0",
+  "base_commit_sha": "417f808479c170eaaccd8ca978f82ea282ae3685",
+  "prompts": {},
+  "sessions": {
+    "s_8a5d05fb2ace5b": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "019e5197-a5d9-7aa1-bd52-b91442778546",
+        "model": "gpt-5.5"
+      },
+      "human_author": "Ryan Mwangi <ryannganga13325@gmail.com>"
+    }
+  }
+}
