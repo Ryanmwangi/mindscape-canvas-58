@@ -1,0 +1,19 @@
+package.json
+  s_8a5d05fb2ace5b::t_f196a42e996815 12
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.5.0",
+  "base_commit_sha": "b142a33f9747efab171d98d07c11b4321348fe6a",
+  "prompts": {},
+  "sessions": {
+    "s_8a5d05fb2ace5b": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "019e5197-a5d9-7aa1-bd52-b91442778546",
+        "model": "gpt-5.3-codex"
+      },
+      "human_author": "Ryan Mwangi <ryannganga13325@gmail.com>"
+    }
+  }
+}
