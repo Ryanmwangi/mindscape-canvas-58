@@ -4,8 +4,6 @@ import { SiteNav } from "@/components/site-nav";
 import { SiteFooter } from "@/components/site-footer";
 import blogMarketing from "@/assets/blog-marketing.jpg";
 
-void Link;
-
 export const Route = createFileRoute("/blog/marketing-vs-advertising")({
   head: () => ({
     meta: [
