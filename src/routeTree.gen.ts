@@ -10,33 +10,62 @@
 
 import { Route as rootRouteImport } from './routes/__root'
 import { Route as IndexRouteImport } from './routes/index'
+import { Route as BlogSocialVsSeoDiscoveryRouteImport } from './routes/blog.social-vs-seo-discovery'
+import { Route as BlogMarketingVsAdvertisingRouteImport } from './routes/blog.marketing-vs-advertising'
 
 const IndexRoute = IndexRouteImport.update({
   id: '/',
   path: '/',
   getParentRoute: () => rootRouteImport,
 } as any)
+const BlogSocialVsSeoDiscoveryRoute =
+  BlogSocialVsSeoDiscoveryRouteImport.update({
+    id: '/blog/social-vs-seo-discovery',
+    path: '/blog/social-vs-seo-discovery',
+    getParentRoute: () => rootRouteImport,
+  } as any)
+const BlogMarketingVsAdvertisingRoute =
+  BlogMarketingVsAdvertisingRouteImport.update({
+    id: '/blog/marketing-vs-advertising',
+    path: '/blog/marketing-vs-advertising',
+    getParentRoute: () => rootRouteImport,
+  } as any)
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
+  '/blog/marketing-vs-advertising': typeof BlogMarketingVsAdvertisingRoute
+  '/blog/social-vs-seo-discovery': typeof BlogSocialVsSeoDiscoveryRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
+  '/blog/marketing-vs-advertising': typeof BlogMarketingVsAdvertisingRoute
+  '/blog/social-vs-seo-discovery': typeof BlogSocialVsSeoDiscoveryRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
+  '/blog/marketing-vs-advertising': typeof BlogMarketingVsAdvertisingRoute
+  '/blog/social-vs-seo-discovery': typeof BlogSocialVsSeoDiscoveryRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
-  fullPaths: '/'
+  fullPaths:
+    | '/'
+    | '/blog/marketing-vs-advertising'
+    | '/blog/social-vs-seo-discovery'
   fileRoutesByTo: FileRoutesByTo
-  to: '/'
-  id: '__root__' | '/'
+  to: '/' | '/blog/marketing-vs-advertising' | '/blog/social-vs-seo-discovery'
+  id:
+    | '__root__'
+    | '/'
+    | '/blog/marketing-vs-advertising'
+    | '/blog/social-vs-seo-discovery'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
+  BlogMarketingVsAdvertisingRoute: typeof BlogMarketingVsAdvertisingRoute
+  BlogSocialVsSeoDiscoveryRoute: typeof BlogSocialVsSeoDiscoveryRoute
 }
 
 declare module '@tanstack/react-router' {
@@ -48,22 +77,28 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof IndexRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/blog/social-vs-seo-discovery': {
+      id: '/blog/social-vs-seo-discovery'
+      path: '/blog/social-vs-seo-discovery'
+      fullPath: '/blog/social-vs-seo-discovery'
+      preLoaderRoute: typeof BlogSocialVsSeoDiscoveryRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/blog/marketing-vs-advertising': {
+      id: '/blog/marketing-vs-advertising'
+      path: '/blog/marketing-vs-advertising'
+      fullPath: '/blog/marketing-vs-advertising'
+      preLoaderRoute: typeof BlogMarketingVsAdvertisingRouteImport
+      parentRoute: typeof rootRouteImport
+    }
   }
 }
 
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
+  BlogMarketingVsAdvertisingRoute: BlogMarketingVsAdvertisingRoute,
+  BlogSocialVsSeoDiscoveryRoute: BlogSocialVsSeoDiscoveryRoute,
 }
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)
   ._addFileTypes<FileRouteTypes>()
-
-import type { getRouter } from './router.tsx'
-import type { startInstance } from './start.ts'
-declare module '@tanstack/react-start' {
-  interface Register {
-    ssr: true
-    router: Awaited<ReturnType<typeof getRouter>>
-    config: Awaited<ReturnType<typeof startInstance.getOptions>>
-  }
-}
