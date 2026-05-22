@@ -1,0 +1,19 @@
+README.md
+  s_8a5d05fb2ace5b::t_36d20ec34a0e63 1-128
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.5.0",
+  "base_commit_sha": "66f33abb04d0ec8b0d9d2b3b73a55e8bea68fcca",
+  "prompts": {},
+  "sessions": {
+    "s_8a5d05fb2ace5b": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "019e5197-a5d9-7aa1-bd52-b91442778546",
+        "model": "gpt-5.5"
+      },
+      "human_author": "Ryan Mwangi <ryannganga13325@gmail.com>"
+    }
+  }
+}
