@@ -22,24 +22,24 @@ function Article() {
     <div className="min-h-screen" style={{ background: "var(--gradient-bg)" }}>
       <SiteNav />
 
-      <article className="mx-auto max-w-3xl px-6 pb-24 pt-36 md:px-8 md:pt-44">
-        <Link to="/" hash="blogs" className="inline-flex items-center gap-2 text-xs uppercase tracking-[0.22em] text-muted-foreground hover:text-primary">
+      <article className="mx-auto max-w-3xl px-4 pb-24 pt-16 md:px-6 md:pt-24">
+        <Link to="/" hash="blogs" className="inline-flex items-center gap-2 text-[10px] font-semibold uppercase tracking-[0.26em] text-muted-foreground hover:text-primary">
           <ArrowLeft className="h-3.5 w-3.5" /> Back to blogs
         </Link>
 
-        <header className="mt-10">
-          <h1 className="text-5xl font-semibold leading-tight tracking-tight md:text-6xl">
-            <span className="text-foreground">Marketing vs </span>
-            <span className="bg-[image:var(--gradient-brand)] bg-clip-text text-transparent">Advertising</span>
+        <header className="mt-8">
+          <p className="text-[10px] font-semibold uppercase tracking-[0.3em] text-primary">Journal · 01</p>
+          <h1 className="mt-4 font-display text-6xl font-bold leading-[0.95] md:text-7xl">
+            Marketing <span className="italic text-accent">vs</span> Advertising<span className="text-primary">.</span>
           </h1>
-          <p className="mt-4 text-xl font-light text-muted-foreground">What&rsquo;s The Difference?</p>
+          <p className="mt-6 text-xl font-light text-muted-foreground">What&rsquo;s The Difference?</p>
         </header>
 
-        <div className="mt-12 overflow-hidden rounded-3xl border border-border/40">
+        <div className="mt-12 overflow-hidden rounded-[2rem] border border-foreground/15 bg-card">
           <img src={blogMarketing} alt="Marketing letter blocks and 3D shopping cart" width={1280} height={896} className="aspect-[16/10] w-full object-cover" />
         </div>
 
-        <div className="prose-invert mt-12 space-y-6 text-lg leading-relaxed text-foreground/85">
+        <div className="mt-12 space-y-6 text-lg leading-relaxed text-foreground/85">
           <p>One of the biggest reasons brands stay stuck is they confuse visibility with strategy.</p>
           <p>Running ads is not marketing.</p>
           <p>Boosting posts, paying for placements and putting your product in front of people might get attention for a moment, but attention without strategy is just a post dressed up as progress.</p>
@@ -47,8 +47,8 @@ function Article() {
           <p>It&rsquo;s in the research that reveals what your audience actually wants, the positioning that makes your brand memorable and the story your brand tells long before anyone sees an ad.</p>
           <p>Advertising is simply what gives your story a louder microphone.</p>
 
-          <blockquote className="border-l-2 border-primary py-2 pl-6 text-2xl font-light italic text-foreground">
-            Think of it like this: if marketing is the strategy that builds the house, advertising is the paint on the walls. No amount of fresh paint can fix a weak foundation.
+          <blockquote className="my-10 rounded-[2rem] bg-foreground p-8 font-display text-2xl font-semibold italic leading-snug text-background md:text-3xl">
+            Think of it like this: if marketing is the strategy that builds the house, advertising is the paint on the walls. <span className="text-primary">No amount of fresh paint can fix a weak foundation.</span>
           </blockquote>
 
           <p>The brands winning today understand this.</p>

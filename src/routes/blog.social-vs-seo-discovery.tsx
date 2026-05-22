@@ -23,33 +23,33 @@ function Article() {
     <div className="min-h-screen" style={{ background: "var(--gradient-bg)" }}>
       <SiteNav />
 
-      <article className="mx-auto max-w-3xl px-6 pb-24 pt-36 md:px-8 md:pt-44">
-        <Link to="/" hash="blogs" className="inline-flex items-center gap-2 text-xs uppercase tracking-[0.22em] text-muted-foreground hover:text-primary">
+      <article className="mx-auto max-w-3xl px-4 pb-24 pt-16 md:px-6 md:pt-24">
+        <Link to="/" hash="blogs" className="inline-flex items-center gap-2 text-[10px] font-semibold uppercase tracking-[0.26em] text-muted-foreground hover:text-primary">
           <ArrowLeft className="h-3.5 w-3.5" /> Back to blogs
         </Link>
 
-        <header className="mt-10">
-          <h1 className="text-5xl font-semibold leading-tight tracking-tight md:text-6xl">
-            <span className="text-foreground">Is social media taking over </span>
-            <span className="bg-[image:var(--gradient-brand)] bg-clip-text text-transparent">discovery?</span>
+        <header className="mt-8">
+          <p className="text-[10px] font-semibold uppercase tracking-[0.3em] text-primary">Journal · 02</p>
+          <h1 className="mt-4 font-display text-6xl font-bold leading-[0.95] md:text-7xl">
+            Is social media taking over <span className="italic text-accent">discovery?</span>
           </h1>
         </header>
 
-        <div className="mt-12 overflow-hidden rounded-3xl border border-border/40">
+        <div className="mt-12 overflow-hidden rounded-[2rem] border border-foreground/15 bg-card">
           <img src={blogDiscovery} alt="Close-up eye with colorful reflection" width={1280} height={896} className="aspect-[16/10] w-full object-cover" />
         </div>
 
         <div className="mt-12 space-y-6 text-lg leading-relaxed text-foreground/85">
           <p>It&rsquo;s already happening! Discovery doesn&rsquo;t begin with google anymore.</p>
           <p>Search behaviour has changed.</p>
-          <p>According to recent social research, <span className="text-primary">41% of users</span> now start product discovery on social platforms rather than traditional search engines. Even more telling, <span className="text-primary">76% of consumers</span> say content they discovered on socials influenced a purchase decision within the last six months.</p>
+          <p>According to recent social research, <span className="font-semibold text-primary">41% of users</span> now start product discovery on social platforms rather than traditional search engines. Even more telling, <span className="font-semibold text-primary">76% of consumers</span> say content they discovered on socials influenced a purchase decision within the last six months.</p>
           <p>This is the shift many businesses are missing.</p>
           <p>Your audience is no longer defaulting to Google when they need answers.</p>
           <p>They are opening social media to search for product reviews, discover where to eat and relying on short-form content to decide who feels credible enough to trust.</p>
           <p>Google itself has acknowledged this behavioural change, adapting search to surface more short-form video and user-generated content in response to evolving search habits (Search Engine Journal).</p>
           <p>That should tell brands everything they need to know.</p>
 
-          <blockquote className="border-l-2 border-primary py-2 pl-6 text-2xl font-light italic text-foreground">
+          <blockquote className="my-10 rounded-[2rem] bg-primary p-8 font-display text-3xl font-semibold italic leading-snug text-primary-foreground md:text-4xl">
             The rules of discoverability have changed.
           </blockquote>
 
@@ -61,11 +61,11 @@ function Article() {
           <p>The brands winning today understand one thing: visibility is no longer about showing up in feeds, it&rsquo;s about showing up in searches.</p>
         </div>
 
-        <div className="mt-16 rounded-3xl border border-border/50 bg-card/50 p-8 text-center md:p-12">
-          <p className="text-lg text-foreground">
+        <div className="mt-16 rounded-[2.5rem] bg-foreground p-8 text-center text-background md:p-12">
+          <p className="text-lg">
             We help brands build content around the way people actually discover, evaluate and choose today.
           </p>
-          <p className="mt-3 text-muted-foreground">
+          <p className="mt-3 text-background/70">
             If your brand is still creating content for likes instead of discovery, let us help you out!
           </p>
           <div className="mt-8 flex justify-center">
