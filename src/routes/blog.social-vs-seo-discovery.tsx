@@ -20,26 +20,26 @@ export const Route = createFileRoute("/blog/social-vs-seo-discovery")({
 
 function Article() {
   return (
-    <div className="min-h-screen" style={{ background: "var(--gradient-bg)" }}>
+    <div className="min-h-screen bg-background text-foreground">
       <SiteNav />
 
-      <article className="mx-auto max-w-3xl px-4 pb-24 pt-16 md:px-6 md:pt-24">
-        <Link to="/" hash="blogs" className="inline-flex items-center gap-2 text-[10px] font-semibold uppercase tracking-[0.26em] text-muted-foreground hover:text-primary">
+      <article className="mx-auto max-w-3xl px-6 pb-32 pt-16 md:pt-24">
+        <Link to="/" hash="blogs" className="inline-flex items-center gap-2 text-[10px] font-medium uppercase tracking-[0.32em] text-foreground/60 hover:text-primary">
           <ArrowLeft className="h-3.5 w-3.5" /> Back to blogs
         </Link>
 
         <header className="mt-8">
-          <p className="text-[10px] font-semibold uppercase tracking-[0.3em] text-primary">Journal · 02</p>
-          <h1 className="mt-4 font-display text-6xl font-bold leading-[0.95] md:text-7xl">
-            Is social media taking over <span className="italic text-accent">discovery?</span>
+          <p className="text-[10px] font-medium uppercase tracking-[0.4em] text-primary">Journal · No. 02</p>
+          <h1 className="mt-6 font-display text-6xl leading-[0.95] md:text-8xl">
+            Is social media taking over <span className="italic gold-text">discovery?</span>
           </h1>
         </header>
 
-        <div className="mt-12 overflow-hidden rounded-[2rem] border border-foreground/15 bg-card">
+        <div className="mt-12 overflow-hidden border border-primary/15">
           <img src={blogDiscovery} alt="Close-up eye with colorful reflection" width={1280} height={896} className="aspect-[16/10] w-full object-cover" />
         </div>
 
-        <div className="mt-12 space-y-6 text-lg leading-relaxed text-foreground/85">
+        <div className="mt-14 space-y-6 text-lg leading-relaxed text-foreground/80">
           <p>It&rsquo;s already happening! Discovery doesn&rsquo;t begin with google anymore.</p>
           <p>Search behaviour has changed.</p>
           <p>According to recent social research, <span className="font-semibold text-primary">41% of users</span> now start product discovery on social platforms rather than traditional search engines. Even more telling, <span className="font-semibold text-primary">76% of consumers</span> say content they discovered on socials influenced a purchase decision within the last six months.</p>
@@ -49,7 +49,7 @@ function Article() {
           <p>Google itself has acknowledged this behavioural change, adapting search to surface more short-form video and user-generated content in response to evolving search habits (Search Engine Journal).</p>
           <p>That should tell brands everything they need to know.</p>
 
-          <blockquote className="my-10 rounded-[2rem] bg-primary p-8 font-display text-3xl font-semibold italic leading-snug text-primary-foreground md:text-4xl">
+          <blockquote className="my-12 border-l-2 border-primary py-2 pl-8 font-display text-4xl italic leading-snug gold-text md:text-5xl">
             The rules of discoverability have changed.
           </blockquote>
 
@@ -61,14 +61,14 @@ function Article() {
           <p>The brands winning today understand one thing: visibility is no longer about showing up in feeds, it&rsquo;s about showing up in searches.</p>
         </div>
 
-        <div className="mt-16 rounded-[2.5rem] bg-foreground p-8 text-center text-background md:p-12">
-          <p className="text-lg">
+        <div className="mt-20 border border-primary/30 p-10 text-center md:p-14">
+          <p className="font-display text-2xl italic text-foreground md:text-3xl">
             We help brands build content around the way people actually discover, evaluate and choose today.
           </p>
-          <p className="mt-3 text-background/70">
+          <p className="mt-4 text-base text-foreground/65">
             If your brand is still creating content for likes instead of discovery, let us help you out!
           </p>
-          <div className="mt-8 flex justify-center">
+          <div className="mt-10 flex justify-center">
             <CtaButton href="mailto:creativeshismind@gmail.com">Reach out</CtaButton>
           </div>
         </div>

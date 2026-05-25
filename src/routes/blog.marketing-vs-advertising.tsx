@@ -19,27 +19,27 @@ export const Route = createFileRoute("/blog/marketing-vs-advertising")({
 
 function Article() {
   return (
-    <div className="min-h-screen" style={{ background: "var(--gradient-bg)" }}>
+    <div className="min-h-screen bg-background text-foreground">
       <SiteNav />
 
-      <article className="mx-auto max-w-3xl px-4 pb-24 pt-16 md:px-6 md:pt-24">
-        <Link to="/" hash="blogs" className="inline-flex items-center gap-2 text-[10px] font-semibold uppercase tracking-[0.26em] text-muted-foreground hover:text-primary">
+      <article className="mx-auto max-w-3xl px-6 pb-32 pt-16 md:pt-24">
+        <Link to="/" hash="blogs" className="inline-flex items-center gap-2 text-[10px] font-medium uppercase tracking-[0.32em] text-foreground/60 hover:text-primary">
           <ArrowLeft className="h-3.5 w-3.5" /> Back to blogs
         </Link>
 
         <header className="mt-8">
-          <p className="text-[10px] font-semibold uppercase tracking-[0.3em] text-primary">Journal · 01</p>
-          <h1 className="mt-4 font-display text-6xl font-bold leading-[0.95] md:text-7xl">
-            Marketing <span className="italic text-accent">vs</span> Advertising<span className="text-primary">.</span>
+          <p className="text-[10px] font-medium uppercase tracking-[0.4em] text-primary">Journal · No. 01</p>
+          <h1 className="mt-6 font-display text-6xl leading-[0.95] md:text-8xl">
+            Marketing <span className="italic gold-text">vs</span> Advertising<span className="text-primary">.</span>
           </h1>
-          <p className="mt-6 text-xl font-light text-muted-foreground">What&rsquo;s The Difference?</p>
+          <p className="mt-8 font-display text-2xl italic text-foreground/70">What&rsquo;s The Difference?</p>
         </header>
 
-        <div className="mt-12 overflow-hidden rounded-[2rem] border border-foreground/15 bg-card">
+        <div className="mt-12 overflow-hidden border border-primary/15">
           <img src={blogMarketing} alt="Marketing letter blocks and 3D shopping cart" width={1280} height={896} className="aspect-[16/10] w-full object-cover" />
         </div>
 
-        <div className="mt-12 space-y-6 text-lg leading-relaxed text-foreground/85">
+        <div className="mt-14 space-y-6 text-lg leading-relaxed text-foreground/80">
           <p>One of the biggest reasons brands stay stuck is they confuse visibility with strategy.</p>
           <p>Running ads is not marketing.</p>
           <p>Boosting posts, paying for placements and putting your product in front of people might get attention for a moment, but attention without strategy is just a post dressed up as progress.</p>
@@ -47,8 +47,8 @@ function Article() {
           <p>It&rsquo;s in the research that reveals what your audience actually wants, the positioning that makes your brand memorable and the story your brand tells long before anyone sees an ad.</p>
           <p>Advertising is simply what gives your story a louder microphone.</p>
 
-          <blockquote className="my-10 rounded-[2rem] bg-foreground p-8 font-display text-2xl font-semibold italic leading-snug text-background md:text-3xl">
-            Think of it like this: if marketing is the strategy that builds the house, advertising is the paint on the walls. <span className="text-primary">No amount of fresh paint can fix a weak foundation.</span>
+          <blockquote className="my-12 border-l-2 border-primary py-2 pl-8 font-display text-3xl italic leading-snug text-foreground md:text-4xl">
+            Think of it like this: if marketing is the strategy that builds the house, advertising is the paint on the walls. <span className="gold-text">No amount of fresh paint can fix a weak foundation.</span>
           </blockquote>
 
           <p>The brands winning today understand this.</p>
@@ -58,14 +58,14 @@ function Article() {
           <p>Advertising only amplifies what is already there.</p>
           <p>So the next time you come across an ad, remember this: what you are seeing is only the surface.</p>
           <p>The real work is everything happening underneath it.</p>
-          <p className="pt-6 text-muted-foreground">Want more insights on building brands that do more than just look visible?</p>
-          <p className="text-muted-foreground">Check out our socials for practical branding tips.</p>
+          <p className="pt-6 text-foreground/60">Want more insights on building brands that do more than just look visible?</p>
+          <p className="text-foreground/60">Check out our socials for practical branding tips.</p>
         </div>
 
-        <div className="mt-12 flex items-center justify-end gap-4">
-          <a href="#" aria-label="Instagram" className="flex h-10 w-10 items-center justify-center rounded-full border border-border/60 text-foreground hover:border-primary hover:text-primary"><Instagram className="h-4 w-4" /></a>
-          <a href="#" aria-label="Facebook" className="flex h-10 w-10 items-center justify-center rounded-full border border-border/60 text-foreground hover:border-primary hover:text-primary"><Facebook className="h-4 w-4" /></a>
-          <a href="#" aria-label="LinkedIn" className="flex h-10 w-10 items-center justify-center rounded-full border border-border/60 text-foreground hover:border-primary hover:text-primary"><Linkedin className="h-4 w-4" /></a>
+        <div className="mt-16 flex items-center justify-end gap-3">
+          <a href="#" aria-label="Instagram" className="flex h-11 w-11 items-center justify-center border border-foreground/20 text-foreground hover:border-primary hover:text-primary"><Instagram className="h-4 w-4" /></a>
+          <a href="#" aria-label="Facebook" className="flex h-11 w-11 items-center justify-center border border-foreground/20 text-foreground hover:border-primary hover:text-primary"><Facebook className="h-4 w-4" /></a>
+          <a href="#" aria-label="LinkedIn" className="flex h-11 w-11 items-center justify-center border border-foreground/20 text-foreground hover:border-primary hover:text-primary"><Linkedin className="h-4 w-4" /></a>
         </div>
       </article>
 
