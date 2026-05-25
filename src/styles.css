@@ -156,15 +156,28 @@
     color: var(--color-foreground);
     font-family: var(--font-body);
     font-feature-settings: "ss01", "cv11";
+    font-weight: 300;
   }
 
   h1, h2, h3, h4, h5 {
     font-family: var(--font-display);
-    letter-spacing: -0.02em;
+    letter-spacing: -0.015em;
+    font-weight: 400;
   }
 }
 
 @keyframes scroll {
   from { transform: translateX(0); }
   to { transform: translateX(-33.3333%); }
+}
+
+.gold-text {
+  background-image: var(--gradient-gold-text);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.rule-gold {
+  background: linear-gradient(90deg, transparent, oklch(0.78 0.12 88 / 0.6), transparent);
 }
