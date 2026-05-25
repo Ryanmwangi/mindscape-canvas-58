@@ -2,14 +2,12 @@
   "name": "tanstack_start_ts",
   "private": true,
   "sideEffects": false,
-  "homepage": "https://ryanmwangi.github.io/mindscape-canvas-58",
   "type": "module",
   "scripts": {
     "dev": "vite dev",
-    "build": "vite build && vite build -c vite.static.config.ts",
+    "build": "vite build",
     "build:dev": "vite build --mode development",
     "preview": "vite preview",
-    "deploy": "gh-pages -d dist/client",
     "lint": "eslint .",
     "format": "prettier --write ."
   },
@@ -81,7 +79,6 @@
     "eslint-plugin-react-hooks": "^5.2.0",
     "eslint-plugin-react-refresh": "^0.4.20",
     "globals": "^15.15.0",
-    "gh-pages": "^6.3.0",
     "prettier": "^3.7.3",
     "typescript": "^5.8.3",
     "typescript-eslint": "^8.56.1",

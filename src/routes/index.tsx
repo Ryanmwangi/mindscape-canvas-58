@@ -1,20 +1,11 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { Link } from "@tanstack/react-router";
-import {
-  ArrowUpRight,
-  Sparkles,
-  Mail,
-  Phone,
-  Instagram,
-  Facebook,
-  Linkedin,
-  MoveRight,
-} from "lucide-react";
+import { ArrowUpRight, Sparkles, Mail, Phone, Instagram, Facebook, Linkedin, MoveRight } from "lucide-react";
 import { SiteNav } from "@/components/site-nav";
 import { SiteFooter } from "@/components/site-footer";
 import { CtaButton } from "@/components/cta-button";
-import creativeArt from "@/assets/creative-art.png";
-import marketingCreative from "@/assets/marketing-creative.png";
+import aboutDoodle from "@/assets/about-doodle.jpg";
+import blogMarketing from "@/assets/blog-marketing.jpg";
 import blogDiscovery from "@/assets/blog-discovery.jpg";
 
 export const Route = createFileRoute("/")({
@@ -29,16 +20,7 @@ const services = [
   { title: "Web design", tag: "05", note: "Sites built to convert" },
 ];
 
-const marquee = [
-  "Branding",
-  "Discoverability",
-  "Content strategy",
-  "Social-first",
-  "Web design",
-  "Copywriting",
-  "Campaigns",
-  "Growth",
-];
+const marquee = ["Branding", "Discoverability", "Content strategy", "Social-first", "Web design", "Copywriting", "Campaigns", "Growth"];
 
 function Index() {
   return (
@@ -59,16 +41,11 @@ function Index() {
               Creatives<span className="text-accent">.</span>
             </h1>
             <p className="mt-6 max-w-xl text-base text-muted-foreground md:text-lg">
-              We help growing brands transform ideas, products and initiatives into clear, engaging
-              digital communication.
+              We help growing brands transform ideas, products and initiatives into clear, engaging digital communication.
             </p>
             <div className="mt-8 flex flex-wrap items-center gap-4">
               <CtaButton hash="about">Read More</CtaButton>
-              <Link
-                to="/"
-                hash="services"
-                className="inline-flex items-center gap-2 text-sm font-semibold text-foreground hover:text-primary"
-              >
+              <Link to="/" hash="services" className="inline-flex items-center gap-2 text-sm font-semibold text-foreground hover:text-primary">
                 See services <MoveRight className="h-4 w-4" />
               </Link>
             </div>
@@ -78,12 +55,8 @@ function Index() {
 
           {/* Side stat tile */}
           <div className="relative col-span-6 overflow-hidden rounded-[2rem] bg-foreground p-6 text-background md:col-span-4 md:p-8">
-            <p className="text-[10px] font-semibold uppercase tracking-[0.3em] text-background/60">
-              Since day one
-            </p>
-            <p className="mt-6 font-display text-6xl font-bold leading-none md:text-7xl">
-              Go<span className="text-primary">-to</span>
-            </p>
+            <p className="text-[10px] font-semibold uppercase tracking-[0.3em] text-background/60">Since day one</p>
+            <p className="mt-6 font-display text-6xl font-bold leading-none md:text-7xl">Go<span className="text-primary">-to</span></p>
             <p className="mt-3 text-sm text-background/80">
               The studio brands trust for structured digital presence and content strategy.
             </p>
@@ -95,28 +68,17 @@ function Index() {
           {/* Coral square */}
           <div className="col-span-6 flex flex-col justify-between rounded-[2rem] bg-primary p-6 text-primary-foreground md:col-span-3 md:p-8">
             <p className="font-display text-4xl font-bold leading-none">/01</p>
-            <p className="text-sm font-medium">
-              Brand strategy that earns attention — not just buys it.
-            </p>
+            <p className="text-sm font-medium">Brand strategy that earns attention — not just buys it.</p>
           </div>
 
           {/* Image tile */}
           <div className="col-span-6 overflow-hidden rounded-[2rem] border border-foreground/15 bg-card md:col-span-5">
-            <img
-              src={creativeArt}
-              alt="Creative strategy illustration with a glowing lightbulb"
-              loading="lazy"
-              width={1254}
-              height={1254}
-              className="h-full w-full object-cover"
-            />
+            <img src={aboutDoodle} alt="Studio doodles" loading="lazy" width={1024} height={1024} className="h-full w-full object-cover" />
           </div>
 
           {/* Violet tile */}
           <div className="col-span-12 flex flex-col justify-between gap-4 rounded-[2rem] bg-secondary p-6 text-secondary-foreground md:col-span-4 md:p-8">
-            <p className="text-[10px] font-semibold uppercase tracking-[0.3em] text-secondary-foreground/70">
-              What we do
-            </p>
+            <p className="text-[10px] font-semibold uppercase tracking-[0.3em] text-secondary-foreground/70">What we do</p>
             <p className="font-display text-3xl font-semibold leading-tight md:text-4xl">
               Strategy. Story. <span className="italic">Searchability.</span>
             </p>
@@ -139,37 +101,27 @@ function Index() {
       <section id="about" className="scroll-mt-24 px-4 py-24 md:px-6 md:py-32">
         <div className="mx-auto grid max-w-[1400px] grid-cols-12 gap-4">
           <div className="col-span-12 md:col-span-5">
-            <p className="text-[10px] font-semibold uppercase tracking-[0.3em] text-primary">
-              — About us
-            </p>
+            <p className="text-[10px] font-semibold uppercase tracking-[0.3em] text-primary">— About us</p>
             <h2 className="mt-4 font-display text-6xl font-bold leading-[0.95] md:text-7xl">
-              The go-to <br /> for brands <br /> ready to{" "}
-              <span className="italic text-accent">grow.</span>
+              The go-to <br /> for brands <br /> ready to <span className="italic text-accent">grow.</span>
             </h2>
           </div>
           <div className="col-span-12 grid grid-cols-2 gap-4 md:col-span-7">
             <div className="col-span-2 rounded-[2rem] border border-foreground/15 bg-card p-8">
               <p className="text-lg leading-relaxed text-foreground">
-                Since its founding, <span className="font-semibold">His Mind Creatives</span> has
-                been the go-to company for structured digital presence and content strategy needs.
+                Since its founding, <span className="font-semibold">His Mind Creatives</span> has been the go-to company for structured digital presence and content strategy needs.
               </p>
               <p className="mt-4 text-base leading-relaxed text-muted-foreground">
-                We help growing brands transform ideas, products and initiatives into clear and
-                engaging digital communication. Through strategy, design, content and storytelling,
-                we help drive business growth and revenue.
+                We help growing brands transform ideas, products and initiatives into clear and engaging digital communication. Through strategy, design, content and storytelling, we help drive business growth and revenue.
               </p>
             </div>
             <div className="rounded-[2rem] bg-foreground p-6 text-background">
               <p className="font-display text-5xl font-bold">+5</p>
-              <p className="mt-2 text-xs uppercase tracking-[0.22em] text-background/70">
-                Core offerings
-              </p>
+              <p className="mt-2 text-xs uppercase tracking-[0.22em] text-background/70">Core offerings</p>
             </div>
             <div className="rounded-[2rem] bg-primary p-6 text-primary-foreground">
               <p className="font-display text-5xl font-bold italic">Bold.</p>
-              <p className="mt-2 text-xs uppercase tracking-[0.22em] text-primary-foreground/80">
-                Brand-first
-              </p>
+              <p className="mt-2 text-xs uppercase tracking-[0.22em] text-primary-foreground/80">Brand-first</p>
             </div>
           </div>
         </div>
@@ -180,15 +132,12 @@ function Index() {
         <div className="mx-auto max-w-[1400px]">
           <div className="flex flex-col items-start justify-between gap-6 md:flex-row md:items-end">
             <div className="max-w-2xl">
-              <p className="text-[10px] font-semibold uppercase tracking-[0.3em] text-primary">
-                — Our services
-              </p>
+              <p className="text-[10px] font-semibold uppercase tracking-[0.3em] text-primary">— Our services</p>
               <h2 className="mt-4 font-display text-6xl font-bold leading-[0.95] md:text-7xl">
                 What we <span className="italic text-accent">make.</span>
               </h2>
               <p className="mt-6 max-w-xl text-base leading-relaxed text-muted-foreground md:text-lg">
-                Our offerings range from digital marketing, brand strategy to copywriting, website
-                development, video production and more.
+                Our offerings range from digital marketing, brand strategy to copywriting, website development, video production and more.
               </p>
             </div>
             <CtaButton hash="contact">Start a project</CtaButton>
@@ -232,16 +181,13 @@ function Index() {
         <div className="mx-auto max-w-[1400px]">
           <div className="flex flex-col items-start justify-between gap-6 md:flex-row md:items-end">
             <div>
-              <p className="text-[10px] font-semibold uppercase tracking-[0.3em] text-primary">
-                — The Journal
-              </p>
+              <p className="text-[10px] font-semibold uppercase tracking-[0.3em] text-primary">— The Journal</p>
               <h2 className="mt-4 font-display text-6xl font-bold leading-[0.95] md:text-7xl">
                 Notes from <span className="italic text-accent">the studio.</span>
               </h2>
             </div>
             <p className="max-w-sm text-sm text-muted-foreground">
-              Short reads on branding, discoverability and digital strategy for brands that want to
-              be chosen — not just seen.
+              Short reads on branding, discoverability and digital strategy for brands that want to be chosen — not just seen.
             </p>
           </div>
 
@@ -252,30 +198,18 @@ function Index() {
               className="group col-span-12 grid grid-cols-12 gap-0 overflow-hidden rounded-[2rem] border border-foreground/15 bg-card md:col-span-8"
             >
               <div className="col-span-12 overflow-hidden md:col-span-6">
-                <img
-                  src={marketingCreative}
-                  alt="3D marketing strategy scene with a shopping cart and growth visuals"
-                  loading="lazy"
-                  width={1498}
-                  height={1050}
-                  className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
-                />
+                <img src={blogMarketing} alt="Marketing letter blocks and 3D shopping cart" loading="lazy" width={1280} height={896} className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105" />
               </div>
               <div className="col-span-12 flex flex-col justify-between gap-6 p-8 md:col-span-6">
-                <span className="text-[10px] font-semibold uppercase tracking-[0.28em] text-primary">
-                  Journal · 01
-                </span>
+                <span className="text-[10px] font-semibold uppercase tracking-[0.28em] text-primary">Journal · 01</span>
                 <h3 className="font-display text-3xl font-bold leading-tight md:text-4xl">
-                  Marketing <span className="italic">vs</span> <br /> Advertising
-                  <span className="text-primary">.</span>
+                  Marketing <span className="italic">vs</span> <br /> Advertising<span className="text-primary">.</span>
                 </h3>
                 <p className="text-sm text-muted-foreground">
-                  One of the biggest reasons brands stay stuck is they confuse visibility with
-                  strategy. Running ads is not marketing.
+                  One of the biggest reasons brands stay stuck is they confuse visibility with strategy. Running ads is not marketing.
                 </p>
                 <span className="inline-flex items-center gap-2 text-sm font-semibold text-foreground group-hover:text-primary">
-                  Read more{" "}
-                  <ArrowUpRight className="h-4 w-4 transition-transform group-hover:rotate-45" />
+                  Read more <ArrowUpRight className="h-4 w-4 transition-transform group-hover:rotate-45" />
                 </span>
               </div>
             </Link>
@@ -286,29 +220,19 @@ function Index() {
               className="group col-span-12 flex flex-col justify-between overflow-hidden rounded-[2rem] bg-secondary p-8 text-secondary-foreground md:col-span-4"
             >
               <div>
-                <span className="text-[10px] font-semibold uppercase tracking-[0.28em] text-secondary-foreground/70">
-                  Journal · 02
-                </span>
+                <span className="text-[10px] font-semibold uppercase tracking-[0.28em] text-secondary-foreground/70">Journal · 02</span>
                 <h3 className="mt-6 font-display text-3xl font-bold leading-tight md:text-4xl">
-                  Is social media taking over{" "}
-                  <span className="italic text-primary">SEO discovery?</span>
+                  Is social media taking over <span className="italic text-primary">SEO discovery?</span>
                 </h3>
                 <p className="mt-5 text-sm text-secondary-foreground/80">
-                  Discovery doesn't begin with Google anymore. Search behaviour has changed — and
-                  your brand needs to change with it.
+                  Discovery doesn't begin with Google anymore. Search behaviour has changed — and your brand needs to change with it.
                 </p>
               </div>
               <div className="mt-8 flex items-center justify-between">
                 <span className="inline-flex items-center gap-2 text-sm font-semibold group-hover:text-primary">
-                  Read more{" "}
-                  <ArrowUpRight className="h-4 w-4 transition-transform group-hover:rotate-45" />
+                  Read more <ArrowUpRight className="h-4 w-4 transition-transform group-hover:rotate-45" />
                 </span>
-                <img
-                  src={blogDiscovery}
-                  alt="Close-up eye"
-                  loading="lazy"
-                  className="h-16 w-16 rounded-2xl object-cover"
-                />
+                <img src={blogDiscovery} alt="Close-up eye" loading="lazy" className="h-16 w-16 rounded-2xl object-cover" />
               </div>
             </Link>
           </div>
@@ -319,18 +243,12 @@ function Index() {
       <section id="contact" className="scroll-mt-24 px-4 py-24 md:px-6 md:py-32">
         <div className="mx-auto grid max-w-[1400px] grid-cols-12 gap-4">
           <div className="col-span-12 overflow-hidden rounded-[2.5rem] bg-primary p-10 text-primary-foreground md:col-span-7 md:p-14">
-            <p className="text-[10px] font-semibold uppercase tracking-[0.3em] text-primary-foreground/70">
-              — Contact us
-            </p>
+            <p className="text-[10px] font-semibold uppercase tracking-[0.3em] text-primary-foreground/70">— Contact us</p>
             <h2 className="mt-6 font-display text-6xl font-bold leading-[0.92] md:text-8xl">
-              Let us make <br /> your socials <br />
-              <span className="italic">stand out!</span>
+              Let us make <br /> your socials <br /><span className="italic">stand out!</span>
             </h2>
             <div className="mt-10">
-              <a
-                href="mailto:creativeshismind@gmail.com"
-                className="inline-flex items-center gap-3 rounded-full bg-background px-6 py-3 text-[11px] font-semibold uppercase tracking-[0.22em] text-foreground hover:bg-foreground hover:text-background"
-              >
+              <a href="mailto:creativeshismind@gmail.com" className="inline-flex items-center gap-3 rounded-full bg-background px-6 py-3 text-[11px] font-semibold uppercase tracking-[0.22em] text-foreground hover:bg-foreground hover:text-background">
                 Start the conversation
                 <ArrowUpRight className="h-4 w-4" />
               </a>
@@ -339,37 +257,21 @@ function Index() {
           <div className="col-span-12 grid grid-cols-2 gap-4 md:col-span-5">
             <div className="col-span-2 rounded-[2.5rem] border border-foreground/15 bg-card p-8">
               <Mail className="h-5 w-5 text-primary" />
-              <p className="mt-4 text-[10px] font-semibold uppercase tracking-[0.28em] text-muted-foreground">
-                Email
-              </p>
-              <a
-                href="mailto:creativeshismind@gmail.com"
-                className="mt-2 block break-all font-display text-xl font-semibold text-foreground hover:text-primary md:text-2xl"
-              >
+              <p className="mt-4 text-[10px] font-semibold uppercase tracking-[0.28em] text-muted-foreground">Email</p>
+              <a href="mailto:creativeshismind@gmail.com" className="mt-2 block break-all font-display text-xl font-semibold text-foreground hover:text-primary md:text-2xl">
                 creativeshismind@gmail.com
               </a>
             </div>
             <div className="rounded-[2.5rem] border border-foreground/15 bg-card p-8">
               <Phone className="h-5 w-5 text-primary" />
-              <p className="mt-4 text-[10px] font-semibold uppercase tracking-[0.28em] text-muted-foreground">
-                Phone
-              </p>
-              <p className="mt-2 font-display text-lg font-semibold text-foreground">
-                (+254) 140-276-578
-              </p>
+              <p className="mt-4 text-[10px] font-semibold uppercase tracking-[0.28em] text-muted-foreground">Phone</p>
+              <p className="mt-2 font-display text-lg font-semibold text-foreground">(+254) 140-276-578</p>
             </div>
             <div className="flex flex-col justify-between rounded-[2.5rem] bg-foreground p-8 text-background">
-              <p className="text-[10px] font-semibold uppercase tracking-[0.28em] text-background/60">
-                Follow
-              </p>
+              <p className="text-[10px] font-semibold uppercase tracking-[0.28em] text-background/60">Follow</p>
               <div className="mt-6 flex items-center gap-2">
                 {[Linkedin, Facebook, Instagram].map((Icon, i) => (
-                  <a
-                    key={i}
-                    href="#"
-                    aria-label="social"
-                    className="flex h-10 w-10 items-center justify-center rounded-full border border-background/30 hover:border-primary hover:bg-primary hover:text-primary-foreground"
-                  >
+                  <a key={i} href="#" aria-label="social" className="flex h-10 w-10 items-center justify-center rounded-full border border-background/30 hover:border-primary hover:bg-primary hover:text-primary-foreground">
                     <Icon className="h-4 w-4" />
                   </a>
                 ))}
@@ -383,3 +285,4 @@ function Index() {
     </div>
   );
 }
+
