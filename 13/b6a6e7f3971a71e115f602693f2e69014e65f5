@@ -1,0 +1,41 @@
+src/router.tsx
+  s_8a5d05fb2ace5b::t_50cd80ad552e26 5,11
+static/index.html
+  s_8a5d05fb2ace5b::t_50cd80ad552e26 1-22
+vite.config.ts
+  s_8a5d05fb2ace5b::t_50cd80ad552e26 12-14
+.nojekyll
+  s_8a5d05fb2ace5b::t_50cd80ad552e26 1
+404.html
+  s_8a5d05fb2ace5b::t_9d81ac34bbf28c 1-23
+assets/index-D_HiJ1lM.js
+  s_8a5d05fb2ace5b::t_030773d6e49595 1-9
+assets/styles-B6VNWrab.css
+  s_8a5d05fb2ace5b::t_030773d6e49595 1
+package.json
+  s_8a5d05fb2ace5b::t_50cd80ad552e26 5,9,12
+src/static-client.tsx
+  s_8a5d05fb2ace5b::t_50cd80ad552e26 1-20
+index.html
+  s_8a5d05fb2ace5b::t_9d81ac34bbf28c 1-23
+vite.static.config.ts
+  s_8a5d05fb2ace5b::t_50cd80ad552e26 1-15
+robots.txt
+  s_8a5d05fb2ace5b::t_9d81ac34bbf28c 1-2
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.5.2",
+  "base_commit_sha": "13b6a6e7f3971a71e115f602693f2e69014e65f5",
+  "prompts": {},
+  "sessions": {
+    "s_8a5d05fb2ace5b": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "019e5197-a5d9-7aa1-bd52-b91442778546",
+        "model": "gpt-5.5"
+      },
+      "human_author": "Ryan Mwangi <ryannganga13325@gmail.com>"
+    }
+  }
+}
