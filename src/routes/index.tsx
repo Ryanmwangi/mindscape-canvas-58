@@ -4,7 +4,7 @@ import { SiteNav } from "@/components/site-nav";
 import { SiteFooter } from "@/components/site-footer";
 import { CtaButton } from "@/components/cta-button";
 import luxuryHero from "@/assets/luxury-hero.jpg";
-import luxuryTexture from "@/assets/luxury-texture.jpg";
+import pillarEditorial from "@/assets/pillar-editorial.jpg";
 import blogMarketing from "@/assets/blog-marketing.jpg";
 import blogDiscovery from "@/assets/blog-discovery.jpg";
 
@@ -184,7 +184,7 @@ function Index() {
         <div className="mx-auto grid max-w-[1500px] grid-cols-12 gap-10">
           <div className="col-span-12 md:col-span-6">
             <figure className="overflow-hidden border border-primary/15">
-              <img src={luxuryTexture} alt="Marble veined with gold" width={1280} height={1280} loading="lazy" className="h-[520px] w-full object-cover" />
+              <img src={pillarEditorial} alt="Draped silk in indigo and cream under warm light" width={1280} height={1280} loading="lazy" className="h-[520px] w-full object-cover" />
             </figure>
           </div>
           <div className="col-span-12 md:col-span-5 md:col-start-8 md:self-center">
@@ -270,8 +270,8 @@ function Index() {
 
       {/* CONTACT */}
       <section id="contact" className="relative scroll-mt-24 overflow-hidden border-t border-foreground/10 px-6 py-32 md:px-10 md:py-48">
-        <div className="pointer-events-none absolute inset-0 -z-10 opacity-[0.04]">
-          <img src={luxuryTexture} alt="" className="h-full w-full object-cover" />
+        <div className="pointer-events-none absolute inset-0 -z-10 opacity-[0.06]">
+          <img src={pillarEditorial} alt="" className="h-full w-full object-cover" />
         </div>
         <div className="mx-auto grid max-w-[1500px] grid-cols-12 gap-10">
           <div className="col-span-12 md:col-span-7">
