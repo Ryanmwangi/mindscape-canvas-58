@@ -1,0 +1,24 @@
+src/routes/index.tsx
+  s_b5e7086a34a8c7::t_c9558a62966a86 124,126,130,150
+  s_b5e7086a34a8c7::t_3865853bacec73 36,43,49,52,62,101,116-117,121,143,154-155,277-278,295,301,311
+  s_b5e7086a34a8c7::t_4b6d99fb22a68d 28,76,109,166-167,170,173,193,215,235,257,285
+  s_b5e7086a34a8c7::t_98d8f9f3b05d3f 35,48,64,73
+src/styles.css
+  s_b5e7086a34a8c7::t_27568337437073 168
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.5.3",
+  "base_commit_sha": "b7e2e91a04bc1cb0b875cc82a8b088bc3176ad0e",
+  "prompts": {},
+  "sessions": {
+    "s_b5e7086a34a8c7": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "019e94a4-6578-7a33-add3-597d57abe177",
+        "model": "gpt-5.4-mini"
+      },
+      "human_author": "Ryan Mwangi <ryannganga13325@gmail.com>"
+    }
+  }
+}
