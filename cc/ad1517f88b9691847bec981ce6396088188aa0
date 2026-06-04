@@ -1,0 +1,29 @@
+package.json
+  s_2594ef108a7b55::t_381080565b744c 85
+src/routes/index.tsx
+  s_2594ef108a7b55::t_e2d5ca43fc32d5 277
+  s_2594ef108a7b55::t_6d88103e169074 101,116,143,154,186,191,208,219,228,230,233,251,278,295
+  s_2594ef108a7b55::t_7f4168c156f000 185
+  s_2594ef108a7b55::t_39f64169a848e5 207
+  s_2594ef108a7b55::t_64721971c39f58 224
+  s_2594ef108a7b55::t_255158710b5457 142
+  s_2594ef108a7b55::t_999b06e10be6a8 100
+package-lock.json
+  ai_agent 77,4613-4626,5643-5674,6946-6957
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.5.3",
+  "base_commit_sha": "ccad1517f88b9691847bec981ce6396088188aa0",
+  "prompts": {},
+  "sessions": {
+    "s_2594ef108a7b55": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "93350399-63a6-4afd-8248-b9c63e6f423a",
+        "model": "claude-sonnet-4-6"
+      },
+      "human_author": "Ryan Mwangi <ryannganga13325@gmail.com>"
+    }
+  }
+}
