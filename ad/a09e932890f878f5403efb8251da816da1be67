@@ -1,0 +1,27 @@
+public/CNAME
+  s_b5e7086a34a8c7::t_be57ea2ac39c27 1
+src/routes/index.tsx
+  s_b5e7086a34a8c7::t_952427185366f7 2,10,317-318,331
+src/routes/blog.marketing-vs-advertising.tsx
+  s_b5e7086a34a8c7::t_952427185366f7 2,6,67-71
+src/lib/social-links.ts
+  s_b5e7086a34a8c7::t_952427185366f7 1-7
+src/components/site-footer.tsx
+  s_b5e7086a34a8c7::t_952427185366f7 1-2,28
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.5.3",
+  "base_commit_sha": "ada09e932890f878f5403efb8251da816da1be67",
+  "prompts": {},
+  "sessions": {
+    "s_b5e7086a34a8c7": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "019e94a4-6578-7a33-add3-597d57abe177",
+        "model": "gpt-5.4-mini"
+      },
+      "human_author": "Ryan Mwangi <ryannganga13325@gmail.com>"
+    }
+  }
+}
