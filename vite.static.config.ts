@@ -4,7 +4,7 @@ import tailwindcss from "@tailwindcss/vite";
 import tsconfigPaths from "vite-tsconfig-paths";
 
 export default defineConfig({
-  base: "/mindscape-canvas-58/",
+  base: "/",
   root: "static",
   publicDir: "../public",
   plugins: [react(), tailwindcss(), tsconfigPaths()],
