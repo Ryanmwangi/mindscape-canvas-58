@@ -97,8 +97,8 @@ function Index() {
       {/* ABOUT */}
       <section id="about" className="scroll-mt-24 px-6 py-32 md:px-10 md:py-48">
         <div className="mx-auto max-w-[1500px]">
-          <div className="grid grid-cols-12 gap-10">
-            <div className="col-span-12 min-w-0 md:col-span-4">
+          <div className="grid grid-cols-1 gap-10 md:grid-cols-12">
+            <div className="col-span-full min-w-0 md:col-span-4">
               <div className="md:sticky md:top-32">
                 <div className="flex items-center gap-4">
                   <span className="h-px w-8 bg-primary" />
@@ -113,7 +113,7 @@ function Index() {
                 </h2>
               </div>
             </div>
-            <div className="col-span-12 min-w-0 md:col-span-7 md:col-start-6">
+            <div className="col-span-full min-w-0 md:col-span-7 md:col-start-6">
               <p className="break-words font-display text-xl leading-[1.18] text-foreground sm:text-2xl md:text-4xl">
                 Since its founding, <span className="italic gold-text">His Mind Creatives</span> has been the go-to company for structured digital presence and content strategy needs.
               </p>
@@ -139,8 +139,8 @@ function Index() {
       {/* SERVICES */}
       <section id="services" className="scroll-mt-24 border-t border-foreground/10 px-6 py-32 md:px-10 md:py-48">
         <div className="mx-auto max-w-[1500px]">
-          <div className="grid grid-cols-12 items-end gap-10">
-            <div className="col-span-12 min-w-0 md:col-span-7">
+          <div className="grid grid-cols-1 items-end gap-6 md:grid-cols-12 md:gap-10">
+            <div className="col-span-full min-w-0 md:col-span-7">
               <div className="flex items-center gap-4">
                 <span className="h-px w-8 bg-primary" />
                 <p className="text-[10px] font-medium uppercase tracking-[0.4em] text-primary">
@@ -151,7 +151,7 @@ function Index() {
                 What we <span className="italic gold-text">make.</span>
               </h2>
             </div>
-            <div className="col-span-12 min-w-0 md:col-span-5">
+            <div className="col-span-full min-w-0 md:col-span-5">
               <p className="max-w-full break-words text-base leading-relaxed text-foreground/70 md:text-lg">
                 Our offerings range from digital marketing, brand strategy to copywriting, website development, video production and more.
               </p>
@@ -182,13 +182,13 @@ function Index() {
 
       {/* PILLARS — featured editorial spread */}
       <section className="relative overflow-hidden border-t border-foreground/10 px-6 py-32 md:px-10 md:py-48">
-        <div className="mx-auto grid max-w-[1500px] grid-cols-12 gap-10">
-          <div className="col-span-12 md:col-span-6">
+        <div className="mx-auto grid max-w-[1500px] grid-cols-1 gap-10 md:grid-cols-12">
+          <div className="col-span-full md:col-span-6">
             <figure className="overflow-hidden border border-primary/15">
               <img src={pillarEditorial} alt="Draped silk in indigo and cream under warm light" width={1280} height={1280} loading="lazy" className="h-[520px] w-full object-cover" />
             </figure>
           </div>
-          <div className="col-span-12 md:col-span-5 md:col-start-8 md:self-center">
+          <div className="col-span-full md:col-span-5 md:col-start-8 md:self-center">
             <p className="text-[10px] font-medium uppercase tracking-[0.4em] text-primary">— Our craft</p>
             <h2 className="mt-8 font-display text-4xl leading-[1.05] sm:text-5xl md:text-6xl">
               Strategy. Story.<br />
@@ -204,8 +204,8 @@ function Index() {
       {/* JOURNAL */}
       <section id="blogs" className="scroll-mt-24 border-t border-foreground/10 px-6 py-32 md:px-10 md:py-48">
         <div className="mx-auto max-w-[1500px]">
-          <div className="grid grid-cols-12 items-end gap-10">
-            <div className="col-span-12 md:col-span-8">
+          <div className="grid grid-cols-1 items-end gap-6 md:grid-cols-12 md:gap-10">
+            <div className="col-span-full md:col-span-8">
               <div className="flex items-center gap-4">
                 <span className="h-px w-8 bg-primary" />
                 <p className="text-[10px] font-medium uppercase tracking-[0.4em] text-primary">
@@ -216,21 +216,21 @@ function Index() {
                 Notes from <span className="italic gold-text">the studio.</span>
               </h2>
             </div>
-            <p className="col-span-12 text-base text-foreground/65 md:col-span-4">
+            <p className="col-span-full text-base text-foreground/65 md:col-span-4">
               Short reads on branding, discoverability and digital strategy for brands that want to be chosen — not just seen.
             </p>
           </div>
 
-          <div className="mt-20 grid grid-cols-12 gap-10">
+          <div className="mt-20 grid grid-cols-1 gap-10 md:grid-cols-12">
             {/* Featured */}
             <Link
               to="/blog/marketing-vs-advertising"
-              className="group col-span-12 grid grid-cols-12 gap-8 border-t border-foreground/10 pt-10 md:col-span-7"
+              className="group col-span-full grid grid-cols-1 gap-8 border-t border-foreground/10 pt-10 md:col-span-7 md:grid-cols-12"
             >
-              <div className="col-span-12 overflow-hidden border border-foreground/10">
+              <div className="col-span-full overflow-hidden border border-foreground/10">
                 <img src={blogMarketing} alt="Marketing letter blocks and 3D shopping cart" loading="lazy" width={1280} height={896} className="aspect-[4/3] w-full object-cover transition-transform duration-700 group-hover:scale-[1.03]" />
               </div>
-              <div className="col-span-12">
+              <div className="col-span-full">
                 <p className="text-[10px] uppercase tracking-[0.32em] text-primary">Journal · No. 01</p>
                 <h3 className="mt-5 font-display text-3xl leading-tight sm:text-4xl md:text-5xl">
                   Marketing <span className="italic">vs</span> Advertising<span className="text-primary">.</span>
@@ -248,7 +248,7 @@ function Index() {
             {/* Second */}
             <Link
               to="/blog/social-vs-seo-discovery"
-              className="group col-span-12 flex flex-col border-t border-foreground/10 pt-10 md:col-span-5"
+              className="group col-span-full flex flex-col border-t border-foreground/10 pt-10 md:col-span-5"
             >
               <div className="overflow-hidden border border-foreground/10">
                 <img src={blogDiscovery} alt="Close-up eye" loading="lazy" width={1280} height={896} className="aspect-[4/3] w-full object-cover transition-transform duration-700 group-hover:scale-[1.03]" />
@@ -274,8 +274,8 @@ function Index() {
         <div className="pointer-events-none absolute inset-0 -z-10 opacity-[0.06]">
           <img src={pillarEditorial} alt="" className="h-full w-full object-cover" />
         </div>
-          <div className="mx-auto grid max-w-[1500px] grid-cols-12 gap-10">
-          <div className="col-span-12 min-w-0 md:col-span-7">
+          <div className="mx-auto grid max-w-[1500px] grid-cols-1 gap-10 md:grid-cols-12">
+          <div className="col-span-full min-w-0 md:col-span-7">
             <div className="flex items-center gap-4">
               <span className="h-px w-8 bg-primary" />
               <p className="text-[10px] font-medium uppercase tracking-[0.4em] text-primary">
@@ -292,7 +292,7 @@ function Index() {
             </div>
           </div>
 
-          <div className="col-span-12 min-w-0 space-y-10 border-l border-foreground/15 pl-10 md:col-span-5 md:col-start-8">
+          <div className="col-span-full min-w-0 space-y-10 md:col-span-5 md:col-start-8 md:border-l md:border-foreground/15 md:pl-10">
             <div>
               <div className="flex items-center gap-3 text-primary">
                 <Mail className="h-4 w-4" />
