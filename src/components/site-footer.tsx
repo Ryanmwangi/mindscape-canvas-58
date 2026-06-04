@@ -1,4 +1,5 @@
-import { Instagram, Facebook, Linkedin, ArrowUpRight } from "lucide-react";
+import { ArrowUpRight } from "lucide-react";
+import { socialLinks } from "@/lib/social-links";
 
 export function SiteFooter() {
   return (
@@ -24,11 +25,7 @@ export function SiteFooter() {
           <div className="md:col-span-3">
             <p className="text-[10px] font-medium uppercase tracking-[0.32em] text-foreground/50">Follow</p>
             <div className="mt-5 flex items-center gap-3">
-              {[
-                { Icon: Linkedin, href: "https://www.linkedin.com/company/hismind-creatives/", label: "LinkedIn" },
-                { Icon: Facebook, href: "https://www.facebook.com/share/1CwLt4jdqZ/", label: "Facebook" },
-                { Icon: Instagram, href: "https://www.instagram.com/hismind.creatives?igsh=MW14d2x3amtmazVwdA==", label: "Instagram" },
-              ].map(({ Icon, href, label }) => (
+              {socialLinks.map(({ Icon, href, label }) => (
                 <a key={label} href={href} aria-label={label} target="_blank" rel="noopener noreferrer" className="flex h-11 w-11 items-center justify-center border border-foreground/20 text-foreground transition-colors hover:border-primary hover:text-primary">
                   <Icon className="h-4 w-4" />
                 </a>

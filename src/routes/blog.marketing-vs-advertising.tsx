@@ -1,8 +1,9 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
-import { ArrowLeft, Instagram, Facebook, Linkedin } from "lucide-react";
+import { ArrowLeft } from "lucide-react";
 import { SiteNav } from "@/components/site-nav";
 import { SiteFooter } from "@/components/site-footer";
 import blogMarketing from "@/assets/blog-marketing.jpg";
+import { socialLinks } from "@/lib/social-links";
 
 export const Route = createFileRoute("/blog/marketing-vs-advertising")({
   head: () => ({
@@ -63,9 +64,11 @@ function Article() {
         </div>
 
         <div className="mt-16 flex items-center justify-end gap-3">
-          <a href="#" aria-label="Instagram" className="flex h-11 w-11 items-center justify-center border border-foreground/20 text-foreground hover:border-primary hover:text-primary"><Instagram className="h-4 w-4" /></a>
-          <a href="#" aria-label="Facebook" className="flex h-11 w-11 items-center justify-center border border-foreground/20 text-foreground hover:border-primary hover:text-primary"><Facebook className="h-4 w-4" /></a>
-          <a href="#" aria-label="LinkedIn" className="flex h-11 w-11 items-center justify-center border border-foreground/20 text-foreground hover:border-primary hover:text-primary"><Linkedin className="h-4 w-4" /></a>
+          {socialLinks.map(({ Icon, href, label }) => (
+            <a key={label} href={href} aria-label={label} target="_blank" rel="noopener noreferrer" className="flex h-11 w-11 items-center justify-center border border-foreground/20 text-foreground hover:border-primary hover:text-primary">
+              <Icon className="h-4 w-4" />
+            </a>
+          ))}
         </div>
       </article>
 

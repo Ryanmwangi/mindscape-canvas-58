@@ -1,5 +1,5 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
-import { ArrowUpRight, Mail, Phone, Instagram, Facebook, Linkedin } from "lucide-react";
+import { ArrowUpRight, Mail, Phone } from "lucide-react";
 import { SiteNav } from "@/components/site-nav";
 import { SiteFooter } from "@/components/site-footer";
 import { CtaButton } from "@/components/cta-button";
@@ -7,6 +7,7 @@ import luxuryHero from "@/assets/luxury-hero.jpg";
 import pillarEditorial from "@/assets/pillar-editorial.jpg";
 import blogMarketing from "@/assets/blog-marketing.jpg";
 import blogDiscovery from "@/assets/blog-discovery.jpg";
+import { socialLinks } from "@/lib/social-links";
 
 export const Route = createFileRoute("/")({
   component: Index,
@@ -313,8 +314,8 @@ function Index() {
             <div>
               <p className="text-[10px] uppercase tracking-[0.32em] text-primary">Follow</p>
               <div className="mt-4 flex items-center gap-3">
-                {[Linkedin, Facebook, Instagram].map((Icon, i) => (
-                  <a key={i} href="#" aria-label="social" className="flex h-12 w-12 items-center justify-center border border-foreground/20 text-foreground hover:border-primary hover:text-primary">
+                {socialLinks.map(({ Icon, href, label }) => (
+                  <a key={label} href={href} aria-label={label} target="_blank" rel="noopener noreferrer" className="flex h-12 w-12 items-center justify-center border border-foreground/20 text-foreground hover:border-primary hover:text-primary">
                     <Icon className="h-4 w-4" />
                   </a>
                 ))}
