@@ -4,6 +4,7 @@ import { SiteNav } from "@/components/site-nav";
 import { SiteFooter } from "@/components/site-footer";
 import { CtaButton } from "@/components/cta-button";
 import blogDiscovery from "@/assets/blog-discovery.jpg";
+import { socialLinks } from "@/lib/social-links";
 
 export const Route = createFileRoute("/blog/social-vs-seo-discovery")({
   head: () => ({
@@ -71,6 +72,14 @@ function Article() {
           <div className="mt-10 flex justify-center">
             <CtaButton href="mailto:creativeshismind@gmail.com">Reach out</CtaButton>
           </div>
+        </div>
+
+        <div className="mt-16 flex items-center justify-end gap-3">
+          {socialLinks.map(({ Icon, href, label }) => (
+            <a key={label} href={href} aria-label={label} target="_blank" rel="noopener noreferrer" className="flex h-11 w-11 items-center justify-center border border-foreground/20 text-foreground hover:border-primary hover:text-primary">
+              <Icon className="h-4 w-4" />
+            </a>
+          ))}
         </div>
       </article>
 
